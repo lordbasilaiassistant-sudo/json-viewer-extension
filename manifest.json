@@ -1,10 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "JSON Viewer & Formatter — Clean, Private, No Ads",
+  "name": "JSON Viewer & Formatter \u00e2\u20ac\u201d Clean, Private, No Ads",
   "version": "0.1.0",
-  "description": "Auto-formats & beautifies JSON in your browser: collapsible tree, syntax highlight, search, dark mode. 100% local — no ads, no tracking, no network calls.",
-  "permissions": ["storage"],
+  "description": "Auto-formats & beautifies JSON in your browser: collapsible tree, syntax highlight, search, dark mode. 100% local \u00e2\u20ac\u201d no ads, no tracking, no network calls.",
+  "permissions": [
+    "storage"
+  ],
   "content_scripts": [
-    { "matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_end" }
-  ]
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
 }
