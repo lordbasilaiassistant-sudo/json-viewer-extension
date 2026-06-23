@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "JSON Viewer & Formatter — Clean, Private, No Ads",
+  "version": "0.1.0",
+  "description": "Auto-formats & beautifies JSON in your browser: collapsible tree, syntax highlight, search, dark mode. 100% local — no ads, no tracking, no network calls.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    { "matches": ["<all_urls>"], "js": ["content.js"], "run_at": "document_end" }
+  ]
+}
